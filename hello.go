@@ -16,6 +16,7 @@ const (
 // }
 
 func main(){
+	defer fmt.Println("main end")
 	c := make(chan int, 3)
 
 	go func(){
